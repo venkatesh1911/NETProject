@@ -100,7 +100,7 @@
 		{
 			"name": "[concat(parameters('WebsiteName'), '-Insights')]",
 			"type": "Microsoft.Insights/components",
-			"location": "eastus",
+			"location": "Central India",
 			"apiVersion": "2014-04-01",
 			"tags": {
 				"displayName": "insightsComponents"
@@ -131,7 +131,7 @@
 		{
 			"name": "[concat(parameters('PUL_HostingPlanName'), '-', resourceGroup().name)]",
 			"type": "Microsoft.Insights/autoscalesettings",
-			"location": "East US",
+			"location": "Central India",
 			"apiVersion": "2014-04-01",
 			"dependsOn": [
 				"[resourceId('Microsoft.Web/serverfarms', parameters('PUL_HostingPlanName'))]"
